@@ -194,10 +194,14 @@
     
         document.getElementById("picture1").setAttribute("src", "")
         
+        
         document.getElementById("picture2").setAttribute("src", "img/aside/5.jpg");
         
         document.getElementById("picture3").setAttribute("src", "")
       
+        const styleElement = document.createElement("style");
+        styleElement.textContent = 'img[src=""] { display: none; }';
+        document.head.appendChild(styleElement);
 
     }
 </script>
