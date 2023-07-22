@@ -40,7 +40,7 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6" style="width:455;  height:337;">
-                <a href="files/Zello.pdf" class="portfolio-box">
+                <a href="javascript:Women()" class="portfolio-box">
                     <img src="img/portfolio/women.png" class="img-responsive" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
@@ -57,7 +57,7 @@
         </div>
         <div class="row no-gutter no-padding">
             <div class="col-lg-4 col-sm-6" style="width:455;  height:337;">
-                <a href="files/tech-summary.pdf" class="portfolio-box">
+                <a href="javascript:Korea()" class="portfolio-box">
                     <img src="img/portfolio/korea_2.jpg" class="img-responsive" alt="" >
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
@@ -147,7 +147,7 @@
     }
 
     function Korea(){
-        document.getElementById("header").innerHTML= "Vietnam Memorial Items";
+        document.getElementById("header").innerHTML= "Korean Memorial Items";
         document.getElementById("description1_heading").innerHTML= "The Reflections on the Wall";
         document.getElementById("description1_p").innerHTML= "The statues at the Korean Memorial poignantly reflect the spirit of sacrifice and camaraderie among the soldiers who fought during the Korean War. These lifelike statues serve as a powerful tribute to the brave men and women who defended freedom and exemplify the shared values that endure across nations.";
 
@@ -161,6 +161,20 @@
         document.getElementById("picture1").setAttribute("src", "img/aside/6a.jpg")
         document.getElementById("picture2").setAttribute("src", "img/aside/6b.jpg")
         document.getElementById("picture3").setAttribute("src", "img/aside/6c.jpg")
+
+    }
+
+    function Women(){
+        document.getElementById("header").innerHTML= "Vietnam Women's Memorial";
+       
+        document.getElementById("description2_heading").innerHTML= "Statue";
+        document.getElementById("description2_p").innerHTML= "After observing the Wall, your group leader will guide you to the Vietnam Women's Memorial, located not far from the Washington Monument end of the Wall, for the next part of the Scavenger Hunt. The bronze sculpture portrays three field-hospital nurses in military attire, one of whom cradles a wounded soldier while another appears to be searching the sky for an approaching helicopter. Surrounding the memorial are eight yellowwood trees, paying tribute to the eight nurses who lost their lives in Vietnam. Created by the talented female artist, Glenna Goodacre, this memorial stands as a testament to their courage and sacrifice. Finally, the Korean War Veterans Memorial will be the last stop of the evening.";
+
+        
+
+    
+        document.getElementById("picture2").setAttribute("src", "img/aside/5.jpg")
+      
 
     }
 </script>
