@@ -147,9 +147,21 @@
     }
 
     function Vietnam(){
-        const section = document.getElementById("aside");
+        const section = document.getElementById("header");
+        document.getElementById("header").innerHTML= "Vietnam Memorial Items";
+        // if (section) {
+        //     section.scrollIntoView({behavior:'smooth'})
+        // }
+
         if (section) {
-            section.scrollIntoView({behavior:'smooth'})
+            const bodyRect = document.body.getBoundingClientRect();
+            const sectionRect = section.getBoundingClientRect();
+            const offset = sectionRect.top - bodyRect.top;
+
+            // You can adjust the offset to account for any fixed headers or other elements if needed
+            const offsetWithPadding = offset - 20;
+
+            document.documentElement.scrollTop = offsetWithPadding;
         }
         document.getElementById("header").innerHTML= "Vietnam Memorial Items";
         document.getElementById("description1_heading").innerHTML= "Diamond and Cross Symbol";
@@ -169,10 +181,22 @@
     }
 
     function Korea(){
-        const section = document.getElementById("aside");
+        document.getElementById("header").innerHTML= "Vietnam Memorial Items";
+        const section = document.getElementById("header");
+        // if (section) {
+        //     section.scrollIntoView({behavior:'smooth'})
+        // }
         if (section) {
-            section.scrollIntoView({behavior:'smooth'})
+            const bodyRect = document.body.getBoundingClientRect();
+            const sectionRect = section.getBoundingClientRect();
+            const offset = sectionRect.top - bodyRect.top;
+
+            // You can adjust the offset to account for any fixed headers or other elements if needed
+            const offsetWithPadding = offset - 20;
+
+            document.documentElement.scrollTop = offsetWithPadding;
         }
+
         document.getElementById("header").innerHTML= "Korean Memorial Items";
         document.getElementById("description1_heading").innerHTML= "The Reflections on the Wall";
         document.getElementById("description1_p").innerHTML= "The statues at the Korean Memorial poignantly reflect the spirit of sacrifice and camaraderie among the soldiers who fought during the Korean War. These lifelike statues serve as a powerful tribute to the brave men and women who defended freedom and exemplify the shared values that endure across nations.";
