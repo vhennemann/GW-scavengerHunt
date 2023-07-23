@@ -112,9 +112,25 @@
 <script>
     function lincoln(){
         const section = document.getElementById("aside");
+        // if (section) {
+        //     section.scrollIntoView({behavior:'smooth', block: 'start', inline: 'nearest', alignToTop: true})
+        // }
+        
         if (section) {
-            section.scrollIntoView({behavior:'smooth', block: 'start', inline: 'nearest', alignToTop: true})
+            const bodyRect = document.body.getBoundingClientRect();
+            const sectionRect = section.getBoundingClientRect();
+            const offset = sectionRect.top - bodyRect.top;
+
+            // You can adjust the offset to account for any fixed headers or other elements if needed
+            const offsetWithPadding = offset - 20;
+
+            window.scrollTo({
+            top: offsetWithPadding,
+            behavior: 'smooth'
+            });
         }
+
+
         document.getElementById("header").innerHTML= "Lincoln Memorial Items";
         document.getElementById("description1_heading").innerHTML= "Martin Luther King's I Have A Dream Location";
         document.getElementById("description1_p").innerHTML= "The spot where MLK gave his speech is one of the three things tonight’s Scavenger Hunt will suggest you look out for at the Lincoln Memorial.";
