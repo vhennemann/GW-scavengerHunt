@@ -113,7 +113,7 @@
     function lincoln(){
         const section = document.getElementById("aside");
         if (section) {
-            section.scrollIntoView({behavior:'smooth', block: 'start'})
+            section.scrollIntoView({behavior:'smooth', block: 'start', inline: 'nearest', alignToTop: true})
         }
         document.getElementById("header").innerHTML= "Lincoln Memorial Items";
         document.getElementById("description1_heading").innerHTML= "Martin Luther King's I Have A Dream Location";
